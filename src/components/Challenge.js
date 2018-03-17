@@ -23,20 +23,20 @@ const Challenge = () => (
   <Paper style={paperStyle} zDepth={3}>
 
       <div>
-        <h1>Arrays</h1>
+        <h1>Arrays Challenge</h1>
 
-        <h3>Below are a number of arrays.</h3>
+        <h3>Below are a number of rows with numbers in them</h3>
 
         <p>
-          Your job is to use selenium to find the elements in each array listed below.
-          Once found write a function that is able to return the index where the sum of the arrays integers on the left is equal to the sum of integers on the right.
+          Your job is to use selenium to read the dom and create an array data structure for each of the rows.
+          
+          Once you have the array
+          write a function that is able to return the index of the array where the sum of integers on the left is equal to the sum of integers on the right.
           If there is no index return null
         </p>
         <p>
-          For example given the array
-          <code>[10, 15, 5, 7, 1, 24, 38] </code>
-
-          You would return index 6
+          For example given the array <code>[10, 15, 5, 7, 1, 24, 38] </code>
+          You would return 6 as the sum of integers on the left is 38 and the sum of integers on the right is 38
         </p>
 
         <RenderTable/>

@@ -26,7 +26,8 @@ export default class App extends Component {
   };
 
   showChallenge() {
-    this.setState({showChallenge: true});
+    const show = this.state.showChallenge === true ? false : true;
+    this.setState({showChallenge: show});
   };
 
   render(){ 
@@ -50,9 +51,11 @@ const Intro = (props) => (
         <h1 className="title">Welcome to the ECSDigital Engineer in Test tech Test</h1>
       </header>
       <p className="intro">
-        It's time to get serious. We want you would like you to complete the the e2e test that can be found in <code>src/e2e/</code>
+        It's time to get serious. 
+        Using the programming language of your choice we want you to create a simple selenium framework in .src/test/e2e.
+        Use selenium to click the button below to continue with the test.
       </p>
-      <RaisedButton onClick={props.showChallenge}>
+      <RaisedButton label="Render the Challenge" primary={true} onClick={props.showChallenge}>
       </RaisedButton>
     </Paper>
   </section>
