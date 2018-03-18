@@ -7,8 +7,17 @@ import Paper from 'material-ui/Paper'
 
 import '../App.css';
 
-const submitForm = (answers) => {
+const submitForm = () => {
+  console.log('------------------------------------');
+  console.log(answers);
+  console.log('------------------------------------');
   // submit to endpoint
+}
+
+const answers = [];
+
+const handleText = (event, text) => {
+  answers.push(text);
 }
 
 const paperStyle = {
@@ -25,7 +34,7 @@ const Challenge = () => (
       <div>
         <h1>Arrays Challenge</h1>
 
-        <h3>Below are a number of rows with numbers in them</h3>
+        <h3>Below are a number of rows with integers</h3>
 
         <p>
           Your job is to use selenium to read the dom and create an array data structure for each of the rows.
@@ -41,12 +50,13 @@ const Challenge = () => (
 
         <RenderTable/>
 
-        <TextField hintText="submit challenge 1" underlineShow={false} />
+        <TextField hintText="submit challenge 1" underlineShow={false} onChange={handleText}/>
         <Divider />
-        <TextField hintText="submit challenge 1" underlineShow={false} />
+        <TextField hintText="submit challenge 1" underlineShow={false} onChange={handleText}/>
         <Divider />
-        <TextField hintText="submit challenge 3" underlineShow={false} />
+        <TextField hintText="submit challenge 3" underlineShow={false} onChange={handleText}/>
         <Divider />
+        
         <RaisedButton label="Submit Answers" primary={true} onClick={submitForm}/>
       </div>
       </Paper>

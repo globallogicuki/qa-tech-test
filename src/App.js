@@ -55,8 +55,7 @@ const Intro = (props) => (
         Using the programming language of your choice we want you to create a simple selenium framework in .src/test/e2e.
         Use selenium to click the button below to continue with the test.
       </p>
-      <RaisedButton label="Render the Challenge" primary={true} onClick={props.showChallenge}>
-      </RaisedButton>
+      <RaisedButton label="Render the Challenge" primary={true} onClick={props.showChallenge} />
     </Paper>
   </section>
 )
