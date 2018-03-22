@@ -68,13 +68,13 @@ export default class CustomTable extends Component {
             stripedRows={this.state.stripedRows}
           >
           <TableRow>
-            { array1.map(item => <TableRowColumn>{item}</TableRowColumn>)}  
+            { array1.map((item, index) => <TableRowColumn key={index}>{item}</TableRowColumn>)}  
           </TableRow>
           <TableRow>
-          { array2.map(item => <TableRowColumn>{item}</TableRowColumn>)}  
+          { array2.map((item, index) => <TableRowColumn key={index}>{item}</TableRowColumn>)}  
           </TableRow>
           <TableRow>
-          { array3.map(item => <TableRowColumn>{item}</TableRowColumn>)}  
+          { array3.map((item, index) => <TableRowColumn key={index}>{item}</TableRowColumn>)}  
           </TableRow>
         </TableBody>
       </Table>
