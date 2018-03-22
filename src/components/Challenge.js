@@ -9,14 +9,19 @@ import '../App.css';
 
 const paperStyle = {
   padding: 20,
-  height: 800,
+  height: 1100,
   margin: 20,
   textAlign: 'center',
 };
-
-const Challenge = () => (
-  <section id="challenge">
-  <Paper style={paperStyle} zDepth={3}>
+export default class Challenge extends Component {
+  constructor() {
+    super();
+  }
+  
+  render() {
+    return (
+      <section id="challenge">
+      <Paper style={paperStyle} zDepth={3}>
 
       <div>
         <h1>Arrays Challenge</h1>
@@ -40,7 +45,8 @@ const Challenge = () => (
 
       </div>
       </Paper>
-  </section>
-)
+     </section>
+    )
+  }
+}
 
-export default Challenge;

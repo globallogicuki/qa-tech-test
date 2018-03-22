@@ -3,16 +3,10 @@
 }
 
 .App-logo {
-  height: 100px;
   position: relative;
   right: 500px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  Width: 100%;
+  height: auto
 }
 
 .App-title {
@@ -28,9 +22,4 @@
   height: 1000px; 
   top: 0; 
   left: 0;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }

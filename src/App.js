@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import Challenge from './components/Challenge'
 import logo from './logo.png';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
 import Paper from 'material-ui/Paper'
+import Lightbox from 'react-images';
+
 import './App.css';
 
 const paperStyle = {
   padding: 20,
-  height: 800,
+  height: 2500,
   margin: 20,
   textAlign: 'center',
 };
-
 
 export default class App extends Component {
   constructor(props) {
@@ -28,7 +28,15 @@ export default class App extends Component {
   showChallenge() {
     const show = this.state.showChallenge === true ? false : true;
     this.setState({showChallenge: show});
+
   };
+
+  componentDidUpdate() {
+    if (this.state.showChallenge === true) {
+      const elem = document.getElementById('challenge'); 
+      elem.scrollIntoView({block: 'end', behavior: 'smooth'});
+    }
+  }
 
   render(){ 
   return(
@@ -36,7 +44,7 @@ export default class App extends Component {
           <div>
             <Intro showChallenge={this.showChallenge}/>
             {this.state.showChallenge === true && 
-            <Challenge />
+            <Challenge/>
           }
           </div>
   </MuiThemeProvider>
@@ -46,10 +54,7 @@ export default class App extends Component {
 const Intro = (props) => (
   <section id="home">
     <Paper style={paperStyle} zDepth={3}>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="title">Welcome to the ECSDigital Engineer in Test tech Test</h1>
-      </header>
+      <h1 className="title">Welcome to the ECSDigital Engineer in Test tech Test</h1>
       <p className="intro">
         It's time to get serious. 
         Using the programming language of your choice we want you to create a simple selenium framework in .src/test/e2e.

@@ -2,25 +2,9 @@ import React, {Component} from 'react';
 import {
   Table,
   TableBody,
-  TableFooter,
-  TableHeader,
-  TableHeaderColumn,
   TableRow,
   TableRowColumn,
 } from 'material-ui/Table';
-import TextField from 'material-ui/TextField';
-import Toggle from 'material-ui/Toggle';
-
-const styles = {
-  propContainer: {
-    width: 200,
-    overflow: 'hidden',
-    margin: '20px auto 0',
-  },
-  propToggleHeader: {
-    margin: '20px auto 10px',
-  },
-};
 
 const array1 = [1,2,3,4,5,6,7,8,10]
 const array2 = [5,6,3,2,6,7,2,3,4]
@@ -47,10 +31,6 @@ export default class CustomTable extends Component {
     });
   };
 
-  handleChange = (event) => {
-    this.setState({height: event.target.value});
-  };
-
   render() {
     return (
       <div>
@@ -71,10 +51,10 @@ export default class CustomTable extends Component {
             { array1.map((item, index) => <TableRowColumn key={index}>{item}</TableRowColumn>)}  
           </TableRow>
           <TableRow>
-          { array2.map((item, index) => <TableRowColumn key={index}>{item}</TableRowColumn>)}  
+            { array2.map((item, index) => <TableRowColumn key={index}>{item}</TableRowColumn>)}  
           </TableRow>
           <TableRow>
-          { array3.map((item, index) => <TableRowColumn key={index}>{item}</TableRowColumn>)}  
+            { array3.map((item, index) => <TableRowColumn key={index}>{item}</TableRowColumn>)}  
           </TableRow>
         </TableBody>
       </Table>
