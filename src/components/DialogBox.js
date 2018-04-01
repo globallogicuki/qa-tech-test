@@ -16,7 +16,6 @@ export default class DialogExampleAlert extends React.Component {
         onClick={this.props.handleClose}
       />
     ];
-
     return (
       <div>
         <Dialog
@@ -25,9 +24,13 @@ export default class DialogExampleAlert extends React.Component {
           open={this.props.open}
           onRequestClose={this.handleClose}
         >
-          Discard draft?
+        
+        {dialogText(this.props.complete)}
         </Dialog>
       </div>
     );
   }
 }
+
+const dialogText = (complete) => complete ? 'Congratulations you have suceeded. Please submit you challenge ✅' :
+                                            'It looks like your answer wasn\'t quite right ❌'

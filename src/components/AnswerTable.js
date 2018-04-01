@@ -21,7 +21,8 @@ export default class AnswerTable extends Component {
   }
   
   state = {
-    open: false
+    open: false,
+    complete: false
   }
 
   handleClose = () => {
@@ -35,7 +36,11 @@ export default class AnswerTable extends Component {
   console.log('------------------------------------');
   this.setState({open: true});
 
-  // submit to endpoint
+  // submit to endpoint then ((response))
+  const response = 200;
+  if (response === 200) {
+    this.setState({complete: true});
+  }
 }
   handleText = (event, value, formId) => {
     this.setState({
@@ -57,7 +62,7 @@ export default class AnswerTable extends Component {
 
           <p> On submission we will verify your answers are correct </p>
           <RaisedButton label="Submit Answers" primary={true} onClick={this.submitForm}/>
-         <DialogBox open={this.state.open} handleClose={this.handleClose} />
+         <DialogBox open={this.state.open} complete={this.state.complete} handleClose={this.handleClose} />
         </Paper>
       </div>
     );
