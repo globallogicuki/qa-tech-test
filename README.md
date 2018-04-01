@@ -11,13 +11,13 @@ From the terminal run `yarn start`
 Once the app is started follow the instructions on the screen
 
 ## Limitations
-There are no limitiations set on this. If you are struggling to select elemenets you are free to edit the app source code.
-What we are looking for is a good understanding of what makes a robust test and a good understanding of engineering princibles.
+There are no limitations set on this. If you are struggling to select elements you are free to edit the app source code where needed.
+What we are looking for is a good understanding of what makes a robust test and a good understanding of engineering principles.
 
-Note: you will not find the challenge answers in the applicaton. Although you could hack the challenge or spam the api that verifies your answer you still need to submit your test for us to review. 
+Note: you will not find the challenge answers in the application. Although you could hack the challenge or spam the API that verifies your answer you still need to submit your test for us to review. 
 
 ## Submit your test
-Once completed push your submission into your forked repo. This will trigger one of our CI jobs to alert the appropriate people of your submission.
+Once completed push your submission into your forked report. This will trigger one of our CI jobs to alert the appropriate people of your submission.
 
 
 [node]: https://nodejs.org/en/
