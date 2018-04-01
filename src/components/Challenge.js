@@ -14,10 +14,11 @@ const paperStyle = {
   textAlign: 'center',
 };
 export default class Challenge extends Component {
-  constructor() {
-    super();
-  }
-  
+
+componentDidUpdate() {
+  console.log(this.state)
+}
+   
   render() {
     return (
       <section id="challenge">
@@ -42,7 +43,6 @@ export default class Challenge extends Component {
 
         <RenderTable/>
         <AnswerTable/>
-
       </div>
       </Paper>
      </section>

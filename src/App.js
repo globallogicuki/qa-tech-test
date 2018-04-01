@@ -43,9 +43,10 @@ export default class App extends Component {
   <MuiThemeProvider>
           <div>
             <Intro showChallenge={this.showChallenge}/>
-            {this.state.showChallenge === true && 
-            <Challenge/>
-          }
+            {
+              this.state.showChallenge === true && 
+              <Challenge/>
+            }
           </div>
   </MuiThemeProvider>
   )}

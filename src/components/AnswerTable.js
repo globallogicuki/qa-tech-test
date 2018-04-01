@@ -4,7 +4,7 @@ import TextField from 'material-ui/TextField';
 import Toggle from 'material-ui/Toggle';
 import RaisedButton from 'material-ui/RaisedButton';
 import Divider from 'material-ui/Divider';
-
+import DialogBox from './DialogBox';
 
 const paperStyle = {
   padding: 20,
@@ -15,11 +15,26 @@ const paperStyle = {
   textAlign: 'center',
 };
 export default class AnswerTable extends Component {
+  constructor(props) {
+    super()
+    this.handleClose = this.handleClose.bind(this)
+  }
+  
+  state = {
+    open: false
+  }
+
+  handleClose = () => {
+    this.setState({open: false});
+  };
+
 
  submitForm = () => {
   console.log('------------------------------------');
   console.log(this.state);
   console.log('------------------------------------');
+  this.setState({open: true});
+
   // submit to endpoint
 }
   handleText = (event, value, formId) => {
@@ -42,7 +57,7 @@ export default class AnswerTable extends Component {
 
           <p> On submission we will verify your answers are correct </p>
           <RaisedButton label="Submit Answers" primary={true} onClick={this.submitForm}/>
-         
+         <DialogBox open={this.state.open} handleClose={this.handleClose} />
         </Paper>
       </div>
     );
