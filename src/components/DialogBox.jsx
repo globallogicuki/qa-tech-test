@@ -36,5 +36,5 @@ export default class DialogBox extends React.Component {
   }
 }
 
-const dialogText = complete => (complete ? 'Congratulations you have suceeded. Please submit you challenge ✅' :
+const dialogText = complete => (complete ? 'Congratulations you have suceeded. Please submit your challenge ✅' :
   'It looks like your answer wasn\'t quite right ❌');
