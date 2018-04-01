@@ -20,25 +20,24 @@ const rowStyle = {
   alignItems:'center',
   fullWidth: false,
 }
+
 export default class AnswerTable extends Component {
   constructor(props) {
     super()
     this.handleClose = this.handleClose.bind(this)
   }
   
-  state = {
-    open: false,
-    complete: false,
+  state() {
+    dialogBoxOpen: false;
+    complete: false;
   }
 
   handleClose = () => {
-    this.setState({open: false});
+    this.setState({dialogBoxOpen: false});
   };
 
-
  submitForm = () => {
-  this.setState({open: true});
-
+  this.setState({dialogBoxOpen: true});
   if (this.state["answer-1"] === '4' && 
       this.state["answer-2"] === '3' &&
       this.state["answer-3"] === '5') {
@@ -55,7 +54,7 @@ export default class AnswerTable extends Component {
     return (
       <div>
         <Paper style={paperStyle} zDepth={2}>
-          <h2>Submit your Answers</h2>
+          <h2>Submit your answers</h2>
           <TextField hintStyle={rowStyle} hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-1')}/>
           <Divider />
           <TextField  hintStyle={rowStyle} hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-2')}/>
@@ -63,8 +62,9 @@ export default class AnswerTable extends Component {
           <TextField  hintStyle={rowStyle} hintText="submit challenge 3" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-3')}/>
           <Divider />
           <p> On submission we will verify your answers are correct </p>
+          <p>Please be aware this challenge is not about getting the correct answers, but your chosen implementation.</p>
           <RaisedButton label="Submit Answers" primary={true} onClick={this.submitForm}/>
-         <DialogBox open={this.state.open} complete={this.state.complete} handleClose={this.handleClose} />
+         <DialogBox open={this.state.dialogBoxOpen} complete={this.state.complete} handleClose={this.handleClose} />
         </Paper>
       </div>
     );

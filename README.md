@@ -1,26 +1,22 @@
 # ECSD Tech Test
-
-  Welcome to the ECSD Tech Test app
-
-  long scroll to challenge part
-  no implicit timeouts 
-  figure out challenge
-  submit answers on form
-  post this to a Lambda somewhere
-  If correct return to site saying please submit a pr or apply here
-  message slack group to review
-  slack picks random person to review
-
-
-
-## Concept
-
-    Run the application and use selenium to interact with DOM.
+Welcome to the ECSD Tech Test 
 
 ## Running the application
+You will need to have [node] and [yarn] both installed on your machine to run the app. From the terminal run `yarn start`
 
-    yarn start
+## Challenge 
+Once the app is started follow the instructions on the screen
 
-## Complete the e2e test
+## Limitations
+There are no limitiations set on this. If you are struggling to select elemenets you are free to edit the app source code.
+What we are looking for is a good understanding of what makes a robust test and a good understanding of engineering princibles.
+
+Note: you will not find the challenge answers in the applicaton. Although you could hack the challenge or spam the api that verifies your answer you still need to submit your test for us to review. 
 
 ## Submit your test
+Once completed push your submission into your forked repo. This will trigger one of our CI jobs to alert the appropriate people of your submission.
+
+
+
+[node]: https://nodejs.org/en/
+[yarn]: https://yarnpkg.com/en/

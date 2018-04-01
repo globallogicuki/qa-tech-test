@@ -3,21 +3,21 @@ import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
 
 const style = {
-    alignItems:'center',
-    textAlign: 'center',
-}
-export default class DialogExampleAlert extends React.Component {
-    constructor(props) {
-        super();
-    }
+  alignItems: 'center',
+  textAlign: 'center',
+};
+export default class DialogBox extends React.Component {
+  constructor(props) {
+    super();
+  }
 
   render() {
     const actions = [
       <FlatButton
         label="Close"
-        primary={true}
+        primary
         onClick={this.props.handleClose}
-      />
+      />,
     ];
     return (
       <div>
@@ -28,13 +28,13 @@ export default class DialogExampleAlert extends React.Component {
           open={this.props.open}
           onRequestClose={this.handleClose}
         >
-        
-        {dialogText(this.props.complete)}
+
+          {dialogText(this.props.complete)}
         </Dialog>
       </div>
     );
   }
 }
 
-const dialogText = (complete) => complete ? 'Congratulations you have suceeded. Please submit you challenge ✅' :
-                                            'It looks like your answer wasn\'t quite right ❌'
+const dialogText = complete => (complete ? 'Congratulations you have suceeded. Please submit you challenge ✅' :
+  'It looks like your answer wasn\'t quite right ❌');
