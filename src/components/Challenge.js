@@ -1,24 +1,17 @@
 import React, { Component } from 'react';
-import Divider from "material-ui/Divider";
-import TextField from 'material-ui/TextField'
-import RaisedButton from 'material-ui/RaisedButton'
 import RenderTable from './RenderTable';
 import Paper from 'material-ui/Paper';
 import AnswerTable from './AnswerTable';
-import '../App.css';
 
 const paperStyle = {
   padding: 20,
   height: 1100,
   margin: 20,
+  alignItems:'center',
   textAlign: 'center',
+  backgroundColor: '#ced7e5'
 };
-export default class Challenge extends Component {
-
-componentDidUpdate() {
-  console.log(this.state)
-}
-   
+export default class Challenge extends Component {   
   render() {
     return (
       <section id="challenge">

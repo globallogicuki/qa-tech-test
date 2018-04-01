@@ -5,10 +5,11 @@ import {
   TableRow,
   TableRowColumn,
 } from 'material-ui/Table';
-
-const array1 = [1,2,3,4,5,6,7,8,10]
-const array2 = [5,6,3,2,6,7,2,3,4]
-const array3 = [30, 43, 29, 10, 50, 40, 1, 2, 1]
+ 
+//216
+const array1 = [23, 50, 63, 90, 10, 30, 155, 23, 18] //4
+const array2 = [133, 60, 23, 92, 6, 7, 168, 1, 19] // 3
+const array3 = [30, 43, 29, 10, 50, 40, 99, 51, 12] //5
 
 export default class CustomTable extends Component {
 
@@ -23,6 +24,8 @@ export default class CustomTable extends Component {
     deselectOnClickaway: true,
     showCheckboxes: false,
     height: '300px',
+    alignItems:'center',
+    textAlign: 'center',
   };
 
   handleToggle = (event, toggled) => {

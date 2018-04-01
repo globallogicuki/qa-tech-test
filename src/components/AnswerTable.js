@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Paper from 'material-ui/Paper';
 import TextField from 'material-ui/TextField';
-import Toggle from 'material-ui/Toggle';
 import RaisedButton from 'material-ui/RaisedButton';
 import Divider from 'material-ui/Divider';
 import DialogBox from './DialogBox';
@@ -13,7 +12,14 @@ const paperStyle = {
   flexDirection: 'row',
   alignItems:'center',
   textAlign: 'center',
+  backgroundColor: '#c0cfe5'
 };
+
+const rowStyle = {
+  textAlign: 'center',
+  alignItems:'center',
+  fullWidth: false,
+}
 export default class AnswerTable extends Component {
   constructor(props) {
     super()
@@ -22,7 +28,7 @@ export default class AnswerTable extends Component {
   
   state = {
     open: false,
-    complete: false
+    complete: false,
   }
 
   handleClose = () => {
@@ -31,14 +37,11 @@ export default class AnswerTable extends Component {
 
 
  submitForm = () => {
-  console.log('------------------------------------');
-  console.log(this.state);
-  console.log('------------------------------------');
   this.setState({open: true});
 
-  // submit to endpoint then ((response))
-  const response = 200;
-  if (response === 200) {
+  if (this.state["answer-1"] === '4' && 
+      this.state["answer-2"] === '3' &&
+      this.state["answer-3"] === '5') {
     this.setState({complete: true});
   }
 }
@@ -53,13 +56,12 @@ export default class AnswerTable extends Component {
       <div>
         <Paper style={paperStyle} zDepth={2}>
           <h2>Submit your Answers</h2>
-          <TextField hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-1')}/>
+          <TextField hintStyle={rowStyle} hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-1')}/>
           <Divider />
-          <TextField hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-2')}/>
+          <TextField  hintStyle={rowStyle} hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-2')}/>
           <Divider />
-          <TextField hintText="submit challenge 3" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-3')}/>
+          <TextField  hintStyle={rowStyle} hintText="submit challenge 3" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-3')}/>
           <Divider />
-
           <p> On submission we will verify your answers are correct </p>
           <RaisedButton label="Submit Answers" primary={true} onClick={this.submitForm}/>
          <DialogBox open={this.state.open} complete={this.state.complete} handleClose={this.handleClose} />
