@@ -1,8 +1,11 @@
 # ECSD Tech Test
 Welcome to the ECSD Tech Test 
 
+
 ## Running the application
-You will need to have [node] and [yarn] both installed on your machine to run the app. From the terminal run `yarn start`
+You will need to have [node] and [yarn] both installed on your machine to run the app.
+
+From the terminal run `yarn start`
 
 ## Challenge 
 Once the app is started follow the instructions on the screen
@@ -15,7 +18,6 @@ Note: you will not find the challenge answers in the applicaton. Although you co
 
 ## Submit your test
 Once completed push your submission into your forked repo. This will trigger one of our CI jobs to alert the appropriate people of your submission.
-
 
 
 [node]: https://nodejs.org/en/

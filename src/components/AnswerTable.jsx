@@ -61,7 +61,7 @@ export default class AnswerTable extends Component {
           <Divider />
           <TextField  hintStyle={rowStyle} hintText="submit challenge 3" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-3')}/>
           <Divider />
-          <p> On submission we will verify your answers are correct </p>
+          <p> On submission we will verify if your answers are correct </p>
           <p>Please be aware this challenge is not about getting the correct answers, but your chosen implementation.</p>
           <RaisedButton label="Submit Answers" primary={true} onClick={this.submitForm}/>
          <DialogBox open={this.state.dialogBoxOpen} complete={this.state.complete} handleClose={this.handleClose} />
