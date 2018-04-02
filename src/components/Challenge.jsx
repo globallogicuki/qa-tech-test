@@ -21,13 +21,12 @@ const Challenge = () => (
 
         <h3>Below are a number of rows with integers</h3>
 
+        <p> Your job is to use selenium to read the dom and create an array data structure for each of the rows.</p>
         <p>
-          Your job is to use selenium to read the dom and create an array data structure for each of the rows.
-
-          Once you have each array
-          write a function that is able to return the index of the array where the sum of integers on the left is equal to the sum of integers on the right.
-          If there is no index return null
-        </p>
+          Once you have each array,
+          write a function that is able to return the index of the array where the sum of integers at the indext on the left is equal to the sum of integers on the right.</p>
+        
+        <p>If there is no index return null</p>
           
         <p>
           For example given the array <code>[10, 15, 5, 7, 1, 24, 36, 2] </code>

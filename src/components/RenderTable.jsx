@@ -22,7 +22,7 @@ export default class CustomTable extends Component {
     enableSelectAll: false,
     deselectOnClickaway: true,
     showCheckboxes: false,
-    height: '300px',
+    height: '200px',
     alignItems:'center',
     textAlign: 'center',
   };

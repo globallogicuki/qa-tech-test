@@ -6,7 +6,7 @@ import Divider from 'material-ui/Divider';
 import DialogBox from './DialogBox';
 
 const paperStyle = {
-  padding: 20,
+  padding: 10,
   height: 400,
   flex: 1, 
   flexDirection: 'row',
@@ -15,10 +15,19 @@ const paperStyle = {
   backgroundColor: '#c0cfe5'
 };
 
-const rowStyle = {
+const answerStyle = {
   textAlign: 'center',
   alignItems:'center',
-  fullWidth: false,
+  justifyContent: 'center',
+  display: 'inline-block',
+}
+
+const rowStyle ={
+  textAlign: 'center',
+  alignItems:'center',
+  justifyContent: 'center',
+  display: 'block',
+  width: 250
 }
 
 export default class AnswerTable extends Component {
@@ -55,14 +64,16 @@ export default class AnswerTable extends Component {
       <div>
         <Paper style={paperStyle} zDepth={2}>
           <h2>Submit your answers</h2>
-          <TextField hintStyle={rowStyle} hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-1')}/>
-          <Divider />
-          <TextField  hintStyle={rowStyle} hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-2')}/>
-          <Divider />
-          <TextField  hintStyle={rowStyle} hintText="submit challenge 3" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-3')}/>
-          <Divider />
+          <Paper style={answerStyle}>
+            <TextField hintStyle={rowStyle} hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-1')}/>
+            <Divider />
+            <TextField  hintStyle={rowStyle} hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-2')}/>
+            <Divider />
+            <TextField  hintStyle={rowStyle} hintText="submit challenge 3" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-3')}/>
+          </Paper>
           <p> On submission we will verify if your answers are correct </p>
           <p>Please be aware this challenge is not about getting the correct answers, but your chosen implementation.</p>
+          <p>Good Luck!</p>
           <RaisedButton label="Submit Answers" primary={true} onClick={this.submitForm}/>
          <DialogBox open={this.state.dialogBoxOpen} complete={this.state.complete} handleClose={this.handleClose} />
         </Paper>

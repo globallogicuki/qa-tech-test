@@ -22,7 +22,7 @@ const Introduction = props => (
       <Logo />
       <h1 className="title">Welcome to the ECSDigital Engineer in Test tech test</h1>
       <p className="intro">
-          Using the programming language of your choice we want you to create a simple selenium framework in .src/test/e2e.
+          Using the programming language of your choice we want you to create a selenium framework in .src/test/e2e.
           Use selenium to click the button below to continue with the test.
       </p>
       <RaisedButton label="Render the Challenge" primary onClick={props.showChallenge} />
