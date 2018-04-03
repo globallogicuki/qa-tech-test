@@ -5,7 +5,8 @@ Welcome to the ECSD Tech Test
 ## Running the application
 You will need to have [node] and [yarn] both installed on your machine to run the app.
 
-From the terminal run `yarn start`
+
+From the terminal run `yarn && yarn start` to start the app
 
 ## Challenge 
 Once the app is started follow the instructions on the screen
