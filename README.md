@@ -3,10 +3,25 @@ Welcome to the ECSD Tech Test
 
 
 ## Running the application
+
+### Docker Version
+You will need to have [docker] installed and running to start the site.
+
+- Run `docker run -it --rm <IMAGE NAME TBC>` to start the app
+- Visit `localhost` in a browser
+
+OR
+
+- Clone this repository and switch to the `docker` directory
+- Run `./build.sh && ./run.sh`
+- Visit `localhost` in a browser
+
+### Local Version
 You will need to have [node] and [yarn] both installed on your machine to run the app.
 
-
-From the terminal run `yarn && yarn start` to start the app
+- Clone this repository and make sure you are in this directory (the one containing `README.md`!)
+- Run `yarn && yarn start` to start the app
+- Visit `localhost:3000` in a browser
 
 ## Challenge 
 Once the app is started follow the instructions on the screen
