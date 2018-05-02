@@ -5,6 +5,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import Divider from 'material-ui/Divider';
 import DialogBox from './DialogBox';
 
+const verifyEndpoint = 'https://eqe90bcod2.execute-api.eu-west-1.amazonaws.com/live/ECSD-QA-tech-test';
 const paperStyle = {
   padding: 10,
   height: 400,
@@ -47,12 +48,28 @@ export default class AnswerTable extends Component {
 
  submitForm = () => {
   this.setState({dialogBoxOpen: true});
-  if (this.state["answer-1"] === '4' && 
-      this.state["answer-2"] === '3' &&
-      this.state["answer-3"] === '5') {
-    this.setState({complete: true});
+
+  fetch(verifyEndpoint, {
+      mode: 'cors',
+      body: JSON.stringify({                
+        "answer-1": this.state["answer-1"],
+        "answer-2": this.state["answer-2"],
+        "answer-3": this.state["answer-3"]
+    }), 
+        headers: {
+        'content-type': 'application/json'
+      },
+      method: 'POST', 
+    })
+    .then(response => response.text())
+    .then(text => {
+      if (text.includes('success')) {
+        this.setState({complete: true});
+      }
+    })
+    .catch(err => console.error)
   }
-}
+
   handleText = (event, value, formId) => {
     this.setState({
       [formId]: event.target.value,

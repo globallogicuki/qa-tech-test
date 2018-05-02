@@ -7,7 +7,7 @@ import {
 } from 'material-ui/Table';
  
 const array1 = [23, 50, 63, 90, 10, 30, 155, 23, 18];
-const array2 = [133, 60, 23, 92, 6, 7, 168, 1, 19];
+const array2 = [133, 60, 23, 92, 6, 7, 168, 16, 19];
 const array3 = [30, 43, 29, 10, 50, 40, 99, 51, 12];
 
 export default class CustomTable extends Component {
