@@ -25,7 +25,7 @@ const Introduction = props => (
           Using the programming language of your choice we want you to create a selenium framework in .src/test/e2e.
           Use selenium to click the button below to continue with the test.
       </p>
-      <RaisedButton label="Render the Challenge" primary onClick={props.showChallenge} />
+      <RaisedButton data-test-id={"render-challenge"}  label="Render the Challenge" primary onClick={props.showChallenge} />
       <p>You might have noticed that clicking that button starts a really, really long scroll. I wonder how you are going to handle that?</p>
       <span style={{fontSize: 60}} role="img" aria-label="down-emoj" >⬇️</span>
     </Paper>

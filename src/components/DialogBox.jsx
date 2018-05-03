@@ -22,6 +22,7 @@ export default class DialogBox extends React.Component {
     return (
       <div>
         <Dialog
+          className={'dialog'}
           style={style}
           actions={actions}
           modal={false}

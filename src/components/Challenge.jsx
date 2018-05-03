@@ -14,7 +14,7 @@ const paperStyle = {
 
 const Challenge = () => (
   <section id="challenge">
-    <Paper style={paperStyle} zDepth={3}>
+    <Paper className={"challenge"} style={paperStyle} zDepth={3}>
 
       <div>
         <h1>Arrays Challenge</h1>
