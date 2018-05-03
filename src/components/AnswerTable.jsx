@@ -37,9 +37,9 @@ export default class AnswerTable extends Component {
     this.handleClose = this.handleClose.bind(this)
   }
   
-  state() {
-    dialogBoxOpen: false;
-    complete: false;
+  state = {
+    "dialogBoxOpen": false,
+    "complete": false
   }
 
   handleClose = () => {

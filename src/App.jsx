@@ -11,8 +11,8 @@ export default class App extends Component {
     this.showChallenge = this.showChallenge.bind(this);
   }
 
-  state() {
-    showChallenge: false;
+  state = {
+    "showChallenge": false
   }
 
   showChallenge() {
