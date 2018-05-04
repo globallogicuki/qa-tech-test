@@ -1,8 +1,9 @@
 . project.cfg
 
-docker run --rm -d \
+docker run --rm \
   --name="$name" \
   --publish 80:3000 \
+  --mount type=bind,source="${package_json}",destination='/package.json' \
   "$repo":latest
 
 # Some "docker run" options for quick reference:
