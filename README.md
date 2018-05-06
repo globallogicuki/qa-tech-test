@@ -5,17 +5,13 @@ Please make a copy of this repository
 
 ## Running the application
 
-### Docker Version
+### Docker
+
 You will need to have [docker] installed and running to start the site.
 
-- Run `docker run -it --rm <IMAGE NAME TBC>` to start the app
-- Visit `localhost` in a browser
-
-OR
-
-- Clone this repository and switch to the `docker` directory
-- Run `./build.sh && ./run.sh`
-- Visit `localhost` in a browser
+- `docker build -t ecsd-tech-test .`
+- `docker run -it -p 3000:3000 ecsd-tech-test:latest`
+- Visit `localhost:3000` in a browser
 
 ### Local Version
 You will need to have [node] and [yarn] both installed on your machine to run the app.
