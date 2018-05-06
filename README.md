@@ -9,7 +9,7 @@ Please make a copy of this repository
 
 You will need to have [docker] installed and running to start the site.
 
-- `docker build -t ecsd-tech-test .` from docker folder
+- `docker build -t ecsd-tech-test .`
 - `docker run -it -p 3000:3000 ecsd-tech-test:latest`
 - Visit `localhost:3000` in a browser
 
