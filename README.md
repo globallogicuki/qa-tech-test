@@ -21,13 +21,16 @@ You will need to have [docker] installed and running to start the site.
 - Visit `localhost:3000` in a browser
 
 ## Challenge 
-Once the app is started follow the instructions on the screen
+Once the app is started follow the instructions on the screen.
+
+Each part of the challenge gets increasingly harder. The futher you progress the more we will be impressed.
+Complete as much as you can!
 
 ## Limitations
 There are no limitations set on this. If you are struggling to select elements you are free to edit the app source code where needed.
 What we are looking for is a good understanding of what makes a robust test and a good understanding of engineering principles.
 
-Note: you will not find the challenge answers in the application. Although you could hack the challenge or spam the API that verifies your answer you still need to submit your test for us to review. 
+Note: you will not find the challenge answers in the application. Although you could hack the challenge or spam the API that verifies your answer, you still need to submit your test for us to review. 
 
 ## Submit your test
 Once completed push the solution up to your own repository and link ECS the url 
