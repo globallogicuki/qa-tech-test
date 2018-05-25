@@ -5,14 +5,14 @@ Please make a copy of this repository
 
 ## Running the application
 
-### To run Local Version of the App
+### To run the Local Version of the App
 You will need to have [node] and [yarn] both installed on your machine to run the app.
 
 - Clone this repository and make sure you are in this directory (the one containing `README.md`!)
 - Run `yarn && yarn start` to start the app
 - Visit `localhost:3000` in a browser
 
-### To run Docker Version of the App 
+### To run the Docker Version of the App 
 
 You will need to have [docker] installed and running to start the site.
 
@@ -34,6 +34,9 @@ Note: you will not find the challenge answers in the application. Although you c
 
 ## Submit your test
 Once completed push the solution up to your own repository and link ECS the url 
+
+## Note
+Please stick to contributing from one account, it makes you look better
 
 Good Luck!
 
