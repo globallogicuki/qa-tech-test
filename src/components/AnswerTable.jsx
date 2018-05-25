@@ -8,7 +8,7 @@ import DialogBox from './DialogBox';
 const verifyEndpoint = 'https://eqe90bcod2.execute-api.eu-west-1.amazonaws.com/live/ECSD-QA-tech-test';
 const paperStyle = {
   padding: 10,
-  height: 400,
+  height: 500,
   flex: 1, 
   flexDirection: 'row',
   alignItems:'center',
@@ -54,7 +54,8 @@ export default class AnswerTable extends Component {
       body: JSON.stringify({                
         "answer-1": this.state["answer-1"],
         "answer-2": this.state["answer-2"],
-        "answer-3": this.state["answer-3"]
+        "answer-3": this.state["answer-3"],
+        "challenger-name": this.state["challenger-name"]
     }), 
         headers: {
         'content-type': 'application/json'
@@ -87,6 +88,8 @@ export default class AnswerTable extends Component {
             <TextField  hintStyle={rowStyle} hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-2')}/>
             <Divider />
             <TextField  hintStyle={rowStyle} hintText="submit challenge 3" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-3')}/>
+            <Divider />            
+            <TextField  hintStyle={rowStyle} hintText="Your Name" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'challenger-name')}/>
           </Paper>
           <p> On submission we will verify if your answers are correct </p>
           <p>Please be aware this challenge is not about spamming the api to get the correct answers, but your chosen implementation.</p>
