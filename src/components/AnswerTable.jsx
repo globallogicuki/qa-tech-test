@@ -83,13 +83,13 @@ export default class AnswerTable extends Component {
         <Paper style={paperStyle} zDepth={2}>
           <h2>Submit your answers</h2>
           <Paper style={answerStyle}>
-            <TextField hintStyle={rowStyle} hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-1')}/>
+            <TextField data-test-id={"submit-1"} hintStyle={rowStyle} hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-1')}/>
             <Divider />
-            <TextField  hintStyle={rowStyle} hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-2')}/>
+            <TextField data-test-id={"submit-2"} hintStyle={rowStyle} hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-2')}/>
             <Divider />
-            <TextField  hintStyle={rowStyle} hintText="submit challenge 3" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-3')}/>
+            <TextField data-test-id={"submit-3"} hintStyle={rowStyle} hintText="submit challenge 3" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-3')}/>
             <Divider />            
-            <TextField  hintStyle={rowStyle} hintText="Your Name" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'challenger-name')}/>
+            <TextField data-test-id={"submit-4"} hintStyle={rowStyle} hintText="Your Name" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'challenger-name')}/>
           </Paper>
           <p>On submission we will verify if your answers are correct.</p>
           <p>On completion your name will be sent to an ECS slack channel</p>
