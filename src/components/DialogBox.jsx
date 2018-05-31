@@ -6,6 +6,11 @@ const style = {
   alignItems: 'center',
   textAlign: 'center',
 };
+
+
+const dialogText = complete => (complete ? 'Congratulations you have succeeded. Please submit your challenge ✅' :
+  'It looks like your answer wasn\'t quite right ❌');
+
 export default class DialogBox extends React.Component {
   constructor(props) {
     super();
@@ -22,7 +27,7 @@ export default class DialogBox extends React.Component {
     return (
       <div>
         <Dialog
-          className={'dialog'}
+          className="dialog"
           style={style}
           actions={actions}
           modal={false}
@@ -36,6 +41,3 @@ export default class DialogBox extends React.Component {
     );
   }
 }
-
-const dialogText = complete => (complete ? 'Congratulations you have suceeded. Please submit your challenge ✅' :
-  'It looks like your answer wasn\'t quite right ❌');

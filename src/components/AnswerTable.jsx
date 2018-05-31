@@ -91,7 +91,8 @@ export default class AnswerTable extends Component {
             <Divider />            
             <TextField  hintStyle={rowStyle} hintText="Your Name" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'challenger-name')}/>
           </Paper>
-          <p> On submission we will verify if your answers are correct </p>
+          <p>On submission we will verify if your answers are correct.</p>
+          <p>On completion your name will be sent to an ECS slack channel</p>
           <p>Please be aware this challenge is not about spamming the api to get the correct answers, but your chosen implementation.</p>
           <p>Good Luck!</p>
           <RaisedButton label="Submit Answers" primary={true} onClick={this.submitForm}/>
