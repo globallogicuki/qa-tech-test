@@ -40,6 +40,6 @@ Please stick to contributing from one account, it makes you look better
 
 Good Luck!
 
-[docker]: https://www.docker.com/
+[docker]: https://docs.docker.com/get-started/
 [node]: https://nodejs.org/en/
 [yarn]: https://yarnpkg.com/en/
