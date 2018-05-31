@@ -14,7 +14,8 @@ You will need to have [node] and [yarn] both installed on your machine to run th
 
 ### To run the Docker Version of the App 
 
-You will need to have [docker] installed and running to start the site.
+You will need to have [docker] installed and running to build the image.
+If you are new to docker please read the docker docs in order to understand how to build and run a container.
 
 - `docker build -t ecsd-tech-test .`
 - `docker run -it -p 3000:3000 ecsd-tech-test:latest`
