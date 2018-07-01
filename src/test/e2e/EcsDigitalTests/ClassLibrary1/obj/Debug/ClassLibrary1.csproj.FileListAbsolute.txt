@@ -1,0 +1,2 @@
+C:\Users\Alastair Hill\Documents\GitHub\qa-tech-test\src\test\e2e\EcsDigitalTests\ClassLibrary1\obj\Debug\ClassLibrary1.csprojAssemblyReference.cache
+C:\Users\Alastair Hill\Documents\GitHub\qa-tech-test\src\test\e2e\EcsDigitalTests\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache

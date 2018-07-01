@@ -1,0 +1,16 @@
+C:\Users\Alastair Hill\Documents\GitHub\qa-tech-test\src\test\e2e\EcsDigitalTests\EcsDigitalTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Alastair Hill\Documents\GitHub\qa-tech-test\src\test\e2e\EcsDigitalTests\EcsDigitalTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Alastair Hill\Documents\GitHub\qa-tech-test\src\test\e2e\EcsDigitalTests\EcsDigitalTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Alastair Hill\Documents\GitHub\qa-tech-test\src\test\e2e\EcsDigitalTests\EcsDigitalTests\bin\Debug\EcsDigitalTests.dll
+C:\Users\Alastair Hill\Documents\GitHub\qa-tech-test\src\test\e2e\EcsDigitalTests\EcsDigitalTests\bin\Debug\EcsDigitalTests.pdb
+C:\Users\Alastair Hill\Documents\GitHub\qa-tech-test\src\test\e2e\EcsDigitalTests\EcsDigitalTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Alastair Hill\Documents\GitHub\qa-tech-test\src\test\e2e\EcsDigitalTests\EcsDigitalTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Alastair Hill\Documents\GitHub\qa-tech-test\src\test\e2e\EcsDigitalTests\EcsDigitalTests\bin\Debug\WebDriver.dll
+C:\Users\Alastair Hill\Documents\GitHub\qa-tech-test\src\test\e2e\EcsDigitalTests\EcsDigitalTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Alastair Hill\Documents\GitHub\qa-tech-test\src\test\e2e\EcsDigitalTests\EcsDigitalTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Alastair Hill\Documents\GitHub\qa-tech-test\src\test\e2e\EcsDigitalTests\EcsDigitalTests\bin\Debug\WebDriver.xml
+C:\Users\Alastair Hill\Documents\GitHub\qa-tech-test\src\test\e2e\EcsDigitalTests\EcsDigitalTests\obj\Debug\EcsDigitalTests.csproj.CoreCompileInputs.cache
+C:\Users\Alastair Hill\Documents\GitHub\qa-tech-test\src\test\e2e\EcsDigitalTests\EcsDigitalTests\obj\Debug\EcsDigitalTests.csproj.CopyComplete
+C:\Users\Alastair Hill\Documents\GitHub\qa-tech-test\src\test\e2e\EcsDigitalTests\EcsDigitalTests\obj\Debug\EcsDigitalTests.dll
+C:\Users\Alastair Hill\Documents\GitHub\qa-tech-test\src\test\e2e\EcsDigitalTests\EcsDigitalTests\obj\Debug\EcsDigitalTests.pdb
+C:\Users\Alastair Hill\Documents\GitHub\qa-tech-test\src\test\e2e\EcsDigitalTests\EcsDigitalTests\obj\Debug\EcsDigitalTests.csprojAssemblyReference.cache
