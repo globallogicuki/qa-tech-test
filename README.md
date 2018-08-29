@@ -33,6 +33,10 @@ What we are looking for is a good understanding of what makes a robust test and 
 
 Note: you will not find the challenge answers in the application. Although you could hack the challenge or spam the API that verifies your answer, you still need to submit your test for us to review. 
 
+
+## Bonus
+Have your tests start and tear down the app 
+
 ## Submit your test
 Once completed push the solution up to your own repository and link ECS the url 
 
