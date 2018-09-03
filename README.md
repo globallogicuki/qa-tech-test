@@ -35,13 +35,14 @@ Note: you will not find the challenge answers in the application. Although you c
 
 
 ## Bonus
-Have your tests start and tear down the app 
+Have your tests start and tear down the app.
+BDD frameworks are great, but are they applicable to a single page application? You decide.
 
 ## Submit your test
-Once completed push the solution up to your own repository and link ECS the url 
+Once completed push the solution up to your own repository and link ECS the url.
 
 ## Note
-Please stick to contributing from one account, it makes you look better
+Please stick to contributing from one account, it makes you look better.
 
 Good Luck!
 
