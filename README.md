@@ -1,7 +1,7 @@
 # ECSD Tech Test
 Welcome to the ECSD Tech Test 
 
-Please make a copy of this repository
+Please make a clone of this repository
 
 ## Running the application
 
@@ -22,7 +22,7 @@ If you are new to docker please read the docker docs in order to understand how 
 - Visit `localhost:3000` in a browser
 
 ## Challenge 
-Once the app is started follow the instructions on the screen.
+Once the app is started follow the instructions on the screen and complete the solution in the folder `/src/test/e2e/`
 
 Each part of the challenge gets increasingly harder. The futher you progress the more we will be impressed.
 Complete as much as you can!
