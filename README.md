@@ -40,7 +40,7 @@ Have your tests start and tear down the app.
 BDD frameworks are great, but are they always appropriate? You decide.
 
 ## Submit your test
-Once completed push the solution up to your own repository and link ECS the url.
+Once completed push the solution up to your own repository and link ECS the url along with run instructions.
 
 ## Note
 Please stick to contributing from one account, it makes you look better.
