@@ -1,0 +1,86 @@
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class ChallengeOne {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sony Vaio\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		
+		// To click on "Render the Challenge"
+		driver.get("http://localhost:3000/");
+		driver.findElement(By.xpath("//span[contains(text(),'Render the Challenge')]")).click(); 
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			
+		//To read the WebTable and find number of rows and columns
+		int rowCount = driver.findElements(By.xpath("//body//div[@id='root']//div//section[@id='challenge']//div[@class='challenge']//div//div//div//div[2]//table[1]//tbody//tr[*]//td[1]")).size();
+		int colCount = driver.findElements(By.xpath("//body//div[@id='root']//div//section[@id='challenge']//div[@class='challenge']//div//div//div//div[2]//table[1]//tbody//tr[1]//td")).size();
+		System.out.println("Number of Rows and Coloumns in the table given is " +rowCount +" and " +colCount);
+		
+		//To create an array data structure using the values 	
+		
+		for(int i=1; i<=rowCount; i++)
+		
+		{			
+			int array_wt[]= new int[9];
+			int k =1;
+			for (int j=0; j<colCount; j++)
+				{
+					if (i<=9)
+					{
+						{	
+							array_wt[j] = Integer.parseInt(driver.findElement(By.xpath("//body//div[@id='root']//div//section[@id='challenge']//div[@class='challenge']//div//div//div//div[2]//table[1]//tr["+ i +"]//td["+ k +"]")).getText());
+						}
+					}
+					k++;
+				}
+			
+			for (int j=0; j<array_wt.length; j++)
+				{
+					System.out.println("Values at position " + j + " in the array is " + array_wt[j]);
+				}
+			
+			int size = array_wt.length;
+			System.out.println("The center index for Row" + i + " is " + findIndex(array_wt,size));
+		}	
+	}
+	
+	
+		//Function to return the index of the array where the sum of integers at the index on the left is equal to the sum of integers on the right.
+		/*Logic:
+			1. Calculate the sum of all integers on the right starting from the integer at position [1]
+			2. From the sum just calculated, subtract one integer on the right and add the same to 'sum of integers on the left', starting with integer at position [1] 
+			   and go from left to right 
+			3. With each iteration, compare the sum_right with sum_left and if they    	
+		*/
+		
+		static int findIndex(int array_wt[], int size)
+		{
+			int sum_left =0 , sum_right =0;
+			
+			//To calculate sum of integers on the right starting from the integer at position 1 
+			for(int i=1; i<size; i++)
+				{
+					sum_right += array_wt[i];
+				}
+			
+			//To compare sum of integers on the right and left 
+			for (int i=0,j=1;j<size;i++,j++)
+				{
+					sum_right -= array_wt[j]; 
+					sum_left += array_wt[i]; 
+	       
+					if (sum_left == sum_right) 
+	                return i + 1;
+				}
+				
+			return -1;
+		}
+	
+}	
+
+
