@@ -26,6 +26,7 @@ Once the app is started follow the instructions on the screen and complete the s
 
 Each part of the challenge gets increasingly harder. The futher you progress the more we will be impressed.
 Complete as much as you can!
+Once you see that green tick you are done.
 
 ## Limitations
 There are no limitations set on this. If you are struggling to select elements you are free to edit the app source code where needed.
