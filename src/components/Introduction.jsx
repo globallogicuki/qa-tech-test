@@ -27,7 +27,7 @@ const Introduction = props => (
       </p>
       <RaisedButton data-test-id={"render-challenge"}  label="Render the Challenge" primary onClick={props.showChallenge} />
       <p>You might have noticed that clicking that button starts a really, really long scroll. I wonder how you are going to handle that?</p>
-      <span style={{fontSize: 60}} role="img" aria-label="down-emoj" >⬇️</span>
+      <span id="down-button"style={{fontSize: 60}} role="img" aria-label="down-emoj" >⬇️</span>
     </Paper>
   </section>
 );

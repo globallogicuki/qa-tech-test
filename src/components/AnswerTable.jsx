@@ -95,7 +95,7 @@ export default class AnswerTable extends Component {
           <p>On completion your name will be sent to an ECS slack channel</p>
           <p>Please be aware this challenge is not about spamming the api to get the correct answers, but your chosen implementation.</p>
           <p>Good Luck!</p>
-          <RaisedButton label="Submit Answers" primary={true} onClick={this.submitForm}/>
+          <RaisedButton data-test-id={"submit"} label="Submit Answers" primary={true} onClick={this.submitForm}/>
          <DialogBox data-test-id={"render-challenge"} className={"submit-button"}  open={this.state.dialogBoxOpen} complete={this.state.complete} handleClose={this.handleClose} />
         </Paper>
       </div>
