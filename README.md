@@ -36,6 +36,8 @@ Note: you will not find the challenge answers in the application. Although you c
 
 
 ## Bonus
+Your submission should be able to work in CI without any set up or configuration from our side.
+
 Have your tests start and tear down the app.
 
 BDD frameworks are great, but are they always appropriate? You decide.
