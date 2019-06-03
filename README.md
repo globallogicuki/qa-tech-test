@@ -23,6 +23,7 @@ If you are new to docker please read the docker docs in order to understand how 
 
 ## Challenge 
 Once the app is started follow the instructions on the screen and complete the solution in the folder `/src/test/e2e/`
+Your submission should be able to work in CI without any set up or configuration from our side.
 
 Each part of the challenge gets increasingly harder. The futher you progress the more we will be impressed.
 Complete as much as you can!
@@ -36,8 +37,6 @@ Note: you will not find the challenge answers in the application. Although you c
 
 
 ## Bonus
-Your submission should be able to work in CI without any set up or configuration from our side.
-
 Have your tests start and tear down the app.
 
 BDD frameworks are great, but are they always appropriate? You decide.
