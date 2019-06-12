@@ -85,7 +85,7 @@ export default class AnswerTable extends Component {
           <Paper style={answerStyle}>
             <TextField data-test-id={"submit-1"} hintStyle={rowStyle} hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-1')}/>
             <Divider />
-            <TextField data-test-id={"submit-2"} hintStyle={rowStyle} hintText="submit challenge 1" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-2')}/>
+            <TextField data-test-id={"submit-2"} hintStyle={rowStyle} hintText="submit challenge 2" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-2')}/>
             <Divider />
             <TextField data-test-id={"submit-3"} hintStyle={rowStyle} hintText="submit challenge 3" underlineShow={false} onChange={(event, value) => this.handleText(event, value, 'answer-3')}/>
             <Divider />            
