@@ -47,7 +47,7 @@ public class EcsTest {
 		}
 		driver.findElement(input_challenge4).sendKeys("Poonam Borge");
 		driver.findElement(button_submitChallenge).click();
-		//driver.close();
+		driver.close();
 	}
 	// Method to find the index.
 	
