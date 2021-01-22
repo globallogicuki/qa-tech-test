@@ -5,7 +5,8 @@ import RaisedButton from 'material-ui/RaisedButton';
 import Divider from 'material-ui/Divider';
 import DialogBox from './DialogBox';
 
-const verifyEndpoint = 'https://eqe90bcod2.execute-api.eu-west-1.amazonaws.com/live/ECSD-QA-tech-test';
+const verifyEndpoint = "https://pxugho43ie.execute-api.eu-west-1.amazonaws.com/ECSD-QA-tech-test";
+
 const paperStyle = {
   padding: 10,
   height: 500,
