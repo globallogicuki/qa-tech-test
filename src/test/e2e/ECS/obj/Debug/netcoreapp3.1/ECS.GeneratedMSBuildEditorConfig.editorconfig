@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = ECS
+build_property.ProjectDir = /Users/phaneendhra/Desktop/qa-tech-test/src/test/e2e/ECS/
