@@ -60,14 +60,14 @@ namespace ECS
 
             IList<IWebElement> thirdwebElements = Utilities.GetTableRow(Driver, 3);
             List<int> thirdarrayList = new List<int>();
-            for (int runs = 0; runs < secondwebElements.Count; runs++)
+            for (int runs = 0; runs < thirdwebElements.Count; runs++)
             {
                 int iValue = Convert.ToInt32(thirdwebElements[runs].Text);
                 thirdarrayList.Add(iValue);
             }
 
             //convert it back to an array
-            int[] thirdarrvalues = secondarrayList.ToArray();
+            int[] thirdarrvalues = thirdarrayList.ToArray();
             int iThirdIndex = Utilities.GetIndex(thirdarrvalues, thirdarrvalues.Length);            
             Console.WriteLine("Index for Third Row/Challenge is : " + iThirdIndex);
            Console.WriteLine("Index value for Third Row/Challenge is : " + 40);
