@@ -1,7 +1,7 @@
 
 import RaisedButton from 'material-ui/RaisedButton';
 import Paper from 'material-ui/Paper';
-import Img from 'react-image';
+import { Img } from 'react-image';
 import React from 'react';
 import logo from '../logo.png';
 
