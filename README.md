@@ -22,7 +22,7 @@ If you are new to docker please read the docker docs in order to understand how 
 - Visit `localhost:3000` in a browser
 
 ## Challenge 
-Once the app is started follow the instructions on the screen and complete the solution in the folder `/src/test/e2e/`
+Once the app is started follow the instructions on the screen and complete the solution inside the folder `/src/test/e2e/`
 Your submission should be able to work in CI without any set up or configuration from our side.
 
 Each part of the challenge gets a bit harder and you will be told if your submission is complete.
@@ -30,7 +30,8 @@ Once you see that green tick you are done.
 
 ## Limitations
 There are no limitations set on this. If you are struggling to select elements you are free to edit the app source code where needed.
-What we are looking for is a good understanding of what makes a robust test and a good understanding of engineering principles.
+What we are looking for is a good understanding of test and developerment engineering principals.
+
 
 Note: you will not find the challenge answers in the application. Although you could hack the challenge or spam the API that verifies your answer, you still need to submit your test for us to review. 
 
