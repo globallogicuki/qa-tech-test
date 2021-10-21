@@ -25,8 +25,7 @@ If you are new to docker please read the docker docs in order to understand how 
 Once the app is started follow the instructions on the screen and complete the solution in the folder `/src/test/e2e/`
 Your submission should be able to work in CI without any set up or configuration from our side.
 
-Each part of the challenge gets increasingly harder. The futher you progress the more we will be impressed.
-Complete as much as you can!
+Each part of the challenge gets a bit harder and you will be told if your submission is complete.
 Once you see that green tick you are done.
 
 ## Limitations
